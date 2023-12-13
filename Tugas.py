@@ -9,7 +9,6 @@ df = pd.DataFrame(data)
 # Pertanyaan 1:
 
 # Gunakan loop for dan fungsi lambda untuk menghitung gaji setiap karyawan setelah diberikan peningkatan sebesar 5% dari gaji saat ini.
-print('Nomor 1:\n')
 print(f"Data sebelum gaji ditambah 5%:\n{df}")
 for i in range(len(df['Gaji'])):
     df['Gaji+5%'] = df.apply(lambda row : int((row['Gaji'] * 0.05) + row['Gaji']),axis=1)
