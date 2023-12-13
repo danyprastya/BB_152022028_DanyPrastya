@@ -24,7 +24,7 @@ print(f"Data setelah gaji ditambah bonus 5%:\n{df}")
 
 # Gunakan loop for lagi untuk mengevaluasi karyawan yang usianya di atas 30 tahun. Jika usia karyawan di atas 30, berikan peningkatan tambahan sebesar 2% dari gaji saat ini menggunakan fungsi lambda.
 for i in range(len(df['Gaji+5%'])):
-    df['Gaji++'] = df.apply(lambda row : int((row['Gaji+5%'] * 0.02) + row['Gaji+5%ax']) if row['Usia']>30 else 'None',axis=1)
+    df['Gaji++'] = df.apply(lambda row : int((row['Gaji+5%'] * 0.02) + row['Gaji+5%']) if row['Usia']>30 else 'None',axis=1)
 
 
 # Pertanyaan 4:
